@@ -5,6 +5,6 @@ require 'pry'
 doc = Nokogiri::HTML(open("https://flatironschool.com/"))
 header = doc.css(".headline-26OIBN").text
 puts header
-cources = doc.css("gridContainer-EnvccM")
+cources = doc.css("div.gridContainer-EnvccM")
 binding.pry
 puts cources
